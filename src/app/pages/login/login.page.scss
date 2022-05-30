@@ -1,0 +1,31 @@
+.flex-center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:35%;
+}
+.flex-center2{
+  display: flex;
+  align-items: center;
+  height:20%;
+  justify-content:center;
+}
+.flex-center4{
+  display: flex;
+  justify-content:center;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+ion-button {
+  text-transform: none;
+}
+ion-content {
+  //--background: url(/assets/login.png) no-repeat top/cover fixed;
+}
+body {
+  background: url(/assets/login.png) no-repeat top/cover fixed;
+}

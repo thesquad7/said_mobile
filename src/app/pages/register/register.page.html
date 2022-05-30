@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrasi Akun SAID</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Informasi Pribadi</ion-card-title>
+    <ion-item>
+      <ion-label position="floating">Nama Anda</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tempat Lahir</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <div class="grid-item">
+      <ion-button id="open-modal">Tanggal Lahir</ion-button>
+      <ion-modal trigger="open-modal">
+        <ion-content force-overscroll="false">
+          <ion-datetime></ion-datetime>
+        </ion-content>
+      </ion-modal>
+    </div>
+    <ion-item>
+      <ion-label position="floating">Pekerjaan</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nomor Kartu Keluarga</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nomor induk Kependudukan</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Status Kependudukan</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-card-header>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <ion-title>Informasi Akun</ion-title>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Kata Sandi</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ketik Ulang Sandi</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-button color="success" expand="block">Daftar</ion-button>
+  </ion-card-header>
+</ion-card>
+</ion-content>
