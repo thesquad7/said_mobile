@@ -2,6 +2,8 @@
 
 Proyek 1 Sarjana Terapan Komputer
 Politeknik Negeri Indramayu
+Dikembangkan Oleh:
+# Filemon Sitanggang - D4 RPL 20'
 
 ## Getting Started
 
