@@ -1,6 +1,7 @@
-# said
+# SAID - Sistem Administrasi Informasi Desa
 
-A new Flutter project.
+Proyek 1 Sarjana Terapan Komputer
+Politeknik Negeri Indramayu
 
 ## Getting Started
 
