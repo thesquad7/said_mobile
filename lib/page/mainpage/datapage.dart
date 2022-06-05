@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:said/config/calutils.dart';
-import 'package:said/config/eventcalendar.dart';
-import 'package:said/config/multi_mode.dart';
 import 'package:table_calendar/table_calendar.dart';
-
-import '../../config/calendarbasic.dart';
-import '../../config/complex.dart';
 import '../../config/dummyAPI.dart';
-import '../../config/rangecalendar.dart';
+
 
 class page2 extends StatefulWidget {
   @override
