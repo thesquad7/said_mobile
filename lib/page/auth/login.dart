@@ -10,7 +10,7 @@ class LoginUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Flutter Login UI",
+      title: "Said",
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),

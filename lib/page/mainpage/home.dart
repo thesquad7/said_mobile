@@ -13,7 +13,7 @@ class _UI_Core extends State<UI>{
   GlobalKey _bottomNavigationKey = GlobalKey();
   final screen = [
       page_1(),
-      page_2(),
+      page2(),
       page_3(),
     ];
   @override
@@ -26,7 +26,7 @@ class _UI_Core extends State<UI>{
           CircleAvatar(
           ),
           Container(
-            width: 50,
+            width: 70,
             alignment: Alignment.center,
             child: Text("UserX"),
           ),
