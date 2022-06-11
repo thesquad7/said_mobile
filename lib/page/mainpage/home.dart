@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../config/dummyAPI.dart';
 import 'datapage.dart';
 
@@ -16,21 +15,26 @@ class _UI_Core extends State<UI>{
       page2(),
       page_3(),
     ];
+    aksi (){
+      if (this._page < 2){
+        return [
+          Container(
+            width: 70,
+            alignment: Alignment.center,
+            child: Text("UserX"),
+          ),
+          CircleAvatar(
+          ),
+          SizedBox(width:10)]; 
+      }
+    }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(judul().judult[_page]),
-        actions:<Widget>[
-          CircleAvatar(
-          ),
-          Container(
-            width: 70,
-            alignment: Alignment.center,
-            child: Text("UserX"),
-          ),
-        ]
+          actions:this.aksi(),
       ),
       extendBody: true,
         bottomNavigationBar: Theme(

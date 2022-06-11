@@ -12,7 +12,7 @@ class LoginUI extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Said",
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.grey,
       ),
       home: Scaffold(
         body: const MyLogin(),
@@ -58,20 +58,25 @@ class MyLogin extends StatelessWidget {
                       ),
                     ),
                      const SizedBox(
-                      height: 170,
+                      height: 132,
                     ),
                     Container(
-                      child:
-                        CircleAvatar(
-                          foregroundColor: Colors.teal,
-                          child:
-                         Icon(
-                              Icons.person,
+                          decoration: BoxDecoration(
                               color: Colors.grey,
-                              size: 24.0,
-                          ),
+                              border: Border.all(
+                                  width: 10,
+                                  color:Colors.cyan.shade400),
+                              boxShadow: [
+
+                                BoxShadow(
+                                    spreadRadius: 2,
+                                    blurRadius: 10,
+                                    color: Colors.black.withOpacity(0.1),
+                                    offset: Offset(0, 10))
+                              ],
+                              shape: BoxShape.circle,),
+                              child: Icon(Icons.person, size: 99,color:Colors.cyan.shade500),
                         ),
-                    ),
                     const SizedBox(
                       height: 10,
                     ),
@@ -114,7 +119,8 @@ class MyLogin extends StatelessWidget {
                     Row(
                       mainAxisAlignment:  MainAxisAlignment.start,
                       children: [
-                        TextButton(onPressed: (){}, child: const Text(
+                        TextButton(onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RegisterUI()),);}, 
+                        child: const Text(
                           "Lupa Kata Sandi?"
                         ))
                       ],

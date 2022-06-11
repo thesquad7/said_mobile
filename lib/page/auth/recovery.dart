@@ -57,20 +57,25 @@ class MyRegister extends StatelessWidget {
                       ),
                     ),
                      const SizedBox(
-                      height: 170,
+                      height: 132,
                     ),
                     Container(
-                      child:
-                        CircleAvatar(
-                          foregroundColor: Colors.red,
-                          child:
-                         Icon(
-                              Icons.person,
+                          decoration: BoxDecoration(
                               color: Colors.grey,
-                              size: 24.0,
-                          ),
+                              border: Border.all(
+                                  width: 10,
+                                  color:Colors.red),
+                              boxShadow: [
+
+                                BoxShadow(
+                                    spreadRadius: 2,
+                                    blurRadius: 10,
+                                    color: Colors.black.withOpacity(0.1),
+                                    offset: Offset(0, 10))
+                              ],
+                              shape: BoxShape.circle,),
+                              child: Icon(Icons.person, size: 99,color:Colors.red),
                         ),
-                    ),
                     const SizedBox(
                       height: 10,
                     ),
@@ -109,14 +114,6 @@ class MyRegister extends StatelessWidget {
                     ),
                     const SizedBox(
                       height: 5,
-                    ),
-                    Row(
-                      mainAxisAlignment:  MainAxisAlignment.start,
-                      children: [
-                        TextButton(onPressed: (){}, child: const Text(
-                          "Lupa Kata Sandi?"
-                        ))
-                      ],
                     ),
                     const SizedBox(
                       height: 25,
